@@ -130,7 +130,7 @@
     rxjs "6.6.7"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@13.1.3":
+"@angular-devkit/schematics@13.1.3", "@angular-devkit/schematics@~13.1.0":
   version "13.1.3"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-13.1.3.tgz#2328f9cf63d6f556392d96b73af794fc52bfc87f"
   integrity sha512-TvjThB/pFXNFM0j0WX5yg0L2/3xNsqawQuWhkDJ05MBDEnSxbgv5hmOzNL8SNIEMgP0VbSTHtSg5kZvmNiH7vg==
@@ -1692,6 +1692,29 @@
     node-gyp "^8.2.0"
     read-package-json-fast "^2.0.1"
 
+"@nrwl/angular@^13.4.5":
+  version "13.4.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/angular/-/angular-13.4.5.tgz#fa000ff7d62a158af151800a0d78d8c75f950f01"
+  integrity sha512-XzVG9SLgAYdPh7JHrUse5/l9R+QTsPWxBwsLH9SFgsO675+0yeTDgnppeaJWpgVwIMf3+kcZoxynoltPc+iI7Q==
+  dependencies:
+    "@angular-devkit/schematics" "~13.1.0"
+    "@nrwl/cypress" "13.4.5"
+    "@nrwl/devkit" "13.4.5"
+    "@nrwl/jest" "13.4.5"
+    "@nrwl/linter" "13.4.5"
+    "@nrwl/storybook" "13.4.5"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    "@schematics/angular" "~13.1.0"
+    find-parent-dir "^0.3.1"
+    ignore "^5.0.4"
+    jasmine-marbles "~0.8.4"
+    rxjs-for-await "0.0.2"
+    semver "7.3.4"
+    ts-node "~9.1.1"
+    tsconfig-paths "^3.9.0"
+    tslib "^2.3.0"
+    webpack-merge "5.7.3"
+
 "@nrwl/cli@13.4.5":
   version "13.4.5"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.4.5.tgz#21937c66d7bc7d2109c5e32b7ed2f1bbf8509979"
@@ -1779,6 +1802,20 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
+"@nrwl/storybook@13.4.5":
+  version "13.4.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-13.4.5.tgz#b86310ae9465633285d80fc4a546a60f3e21479a"
+  integrity sha512-5wg3xwkclrNybeTMv3lui48roPZgd6LNa8hKeb5/g8GAic5W0OGglGNiLXOlIY0kAs5KIVhvz+7ZXSBVpDuSlw==
+  dependencies:
+    "@nrwl/cypress" "13.4.5"
+    "@nrwl/devkit" "13.4.5"
+    "@nrwl/linter" "13.4.5"
+    "@nrwl/workspace" "13.4.5"
+    core-js "^3.6.5"
+    semver "7.3.4"
+    ts-loader "^9.2.6"
+    tsconfig-paths-webpack-plugin "3.4.1"
+
 "@nrwl/tao@13.4.5":
   version "13.4.5"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.4.5.tgz#bb61a1280a10dfca8956af42cb3e60443381b2b3"
@@ -1845,7 +1882,7 @@
   dependencies:
     esquery "^1.0.1"
 
-"@schematics/angular@13.1.3", "@schematics/angular@^13.0.0":
+"@schematics/angular@13.1.3", "@schematics/angular@^13.0.0", "@schematics/angular@~13.1.0":
   version "13.1.3"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-13.1.3.tgz#c763cdf1a2e0784d5263c23b581bfeb4a4a2f12e"
   integrity sha512-IixVWAEtN97N74PCxg3T03Ar/ECjGyJBWKAjKTTCrgNSWhm2mKgIc4RyI6cVCnltfJWIo48fcFhlOx/elShaCg==
@@ -3299,6 +3336,11 @@ core-js@3.19.3:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.3.tgz#6df8142a996337503019ff3235a7022d7cdf4559"
   integrity sha512-LeLBMgEGSsG7giquSzvgBrTS7V5UL6ks3eQlUSbN8dJStlLFiRzUm5iqsRyzUB8carhfKjkJ2vzKqE6z1Vga9g==
 
+core-js@^3.6.5:
+  version "3.20.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.20.3.tgz#c710d0a676e684522f3db4ee84e5e18a9d11d69a"
+  integrity sha512-vVl8j8ph6tRS3B8qir40H7yw7voy17xL0piAjlbBUsH7WIfzoedL/ZOr1OV9FyZQLWXsayOJyV4tnRyXR85/ag==
+
 core-util-is@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -4526,6 +4568,11 @@ find-cache-dir@^3.3.1:
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
 
+find-parent-dir@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/find-parent-dir/-/find-parent-dir-0.3.1.tgz#c5c385b96858c3351f95d446cab866cbf9f11125"
+  integrity sha512-o4UcykWV/XN9wm+jMEtWLPlV8RXCZnMhQI6F6OdHeSez7iiJWePw8ijOlskJZMsaQoGR/b7dH6lO02HhaTN7+A==
+
 find-up@^4.0.0, find-up@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-4.1.0.tgz#97afe7d6cdc0bc5928584b7c8d7b16e8a9aa5d19"
@@ -5394,6 +5441,13 @@ jake@^10.6.1:
     chalk "^2.4.2"
     filelist "^1.0.1"
     minimatch "^3.0.4"
+
+jasmine-marbles@~0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/jasmine-marbles/-/jasmine-marbles-0.8.4.tgz#67f840012634c453e986fcf48860d6ea92ae144e"
+  integrity sha512-zbtuXABpSWrSswYPiZ5m6EQhluNmKcRQs+82AqJHSN+PMx3ASpDmTvRfqe9Pk2hPh9Ge5zrzOsorIlw3kdwTXQ==
+  dependencies:
+    lodash "^4.17.20"
 
 jest-changed-files@^27.4.2:
   version "27.4.2"
@@ -8500,7 +8554,7 @@ ts-loader@^9.2.6:
     micromatch "^4.0.0"
     semver "^7.3.4"
 
-ts-node@^9.1.1:
+ts-node@^9.1.1, ts-node@~9.1.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.1.1.tgz#51a9a450a3e959401bda5f004a72d54b936d376d"
   integrity sha512-hPlt7ZACERQGf03M253ytLY3dHbGNGrAq9qIHWUY9XHYl1z7wYngSr3OQ5xmui8o2AaxsONxIzjafLUiWBo1Fg==
@@ -8856,6 +8910,14 @@ webpack-dev-server@4.6.0:
     url "^0.11.0"
     webpack-dev-middleware "^5.2.1"
     ws "^8.1.0"
+
+webpack-merge@5.7.3:
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-5.7.3.tgz#2a0754e1877a25a8bbab3d2475ca70a052708213"
+  integrity sha512-6/JUQv0ELQ1igjGDzHkXbVDRxkfA57Zw7PfiupdLFJYrgFqY5ZP8xxbpp2lU3EPwYx89ht5Z/aDkD40hFCm5AA==
+  dependencies:
+    clone-deep "^4.0.1"
+    wildcard "^2.0.0"
 
 webpack-merge@5.8.0, webpack-merge@^5.0.0:
   version "5.8.0"
