@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "quotes": "apps/quotes",
+    "quotes-e2e": "apps/quotes-e2e"
+  }
 }
